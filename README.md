@@ -33,7 +33,7 @@ sudo apt install raspberrypi-kernel-headers raspberrypi-kernel git
 
 ```
 # Install deps
-sudo apt install cmake g++ git libfftw3-dev libgflags-dev gpiod gpiod-dev libgpiod-dev
+sudo apt install cmake g++ git libfftw3-dev libgflags-dev gpiod libgpiod-dev
 ```
 
 ```

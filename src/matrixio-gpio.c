@@ -138,7 +138,7 @@ static int matrixio_gpio_probe(struct platform_device *pdev)
 
 static int matrixio_gpio_remove(struct platform_device *pdev)
 {
-	struct matrixio_gpio *gpio = dev_get_drvdata(pdev->dev);
+    struct matrixio_gpio *gpio = platform_get_drvdata(pdev);
     gpiochip_remove(&gpio->chip);
 	mutex_destroy(&gpio->lock);
 	return 0;

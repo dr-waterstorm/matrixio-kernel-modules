@@ -24,7 +24,24 @@ sudo apt-get upgrade
 
 ```
 # Installation Kernel Packages
-sudo apt-get -y install raspberrypi-kernel-headers raspberrypi-kernel git 
+sudo apt install raspberrypi-kernel-headers raspberrypi-kernel git 
+```
+
+```
+# Install deps
+sudo apt install cmake g++ git libfftw3-dev libgflags-dev gpiod gpiod-dev libgpiod-dev
+```
+
+```
+# Reboot
+sudo reboot
+```
+
+### SPI
+Enable SPI via `sudo raspi-config`
+
+```
+sudo sed -i '$s/$/ spidev.bufsiz=12288/' /boot/firmware/cmdline.txt
 ```
 
 ```

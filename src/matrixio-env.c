@@ -99,11 +99,11 @@ static int matrixio_env_read_raw(struct iio_dev *indio_dev,
 	int ret;
 	struct matrixio_env_data env_data;
 
-	mutex_lock(&indio_dev->mlock);
+	mutex_lock(&indio_dev->lock);
 	ret = matrixio_read(data->mio,
 			    MATRIXIO_MCU_BASE + (MATRIXIO_SRAM_OFFSET_ENV >> 1),
 			    sizeof(env_data), &env_data);
-	mutex_unlock(&indio_dev->mlock);
+	mutex_unlock(&indio_dev->lock);
 
 	switch (mask) {
 	case IIO_CHAN_INFO_RAW:

@@ -16,7 +16,7 @@ struct matrixio_gpio {
 
 static int matrixio_gpio_get_direction(struct gpio_chip *gc, unsigned offset)
 {
-	struct matrixio_gpio *chip = struct matrixio_gpio *chip = container_of(gc, struct matrixio_gpio, chip);
+	struct matrixio_gpio *chip = container_of(gc, struct matrixio_gpio, chip);
 	int gpio_direction;
 
 	mutex_lock(&chip->lock);

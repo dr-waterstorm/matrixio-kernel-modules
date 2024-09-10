@@ -3,7 +3,7 @@
 MATRIXIO Kernel Modules is the kernel drivers for MATRIX Creator and MATRIX Voice.
 
 ## Fork purpose
-As matrixio does not seem to support their hardware anymore, the purpos of this fork is to make the matrixio Kernel for MATRIX Voice usable on a modern Raspberry Pi OS (bookworm) with the 6.6 kernel.
+As matrixio does not seem to support their hardware anymore, the purpose of this fork is to make the matrixio Kernel for MATRIX Voice usable on a modern Raspberry Pi OS (bookworm) with the 6.6 kernel.
 
 ## Warning: Kernel Version
 This drivers **only** works with current stock raspbian kernel. To reverting back to current stock Raspbian kernel use:  
